@@ -1,0 +1,72 @@
+:root {
+	/* Banner */
+	--banner-outer-height: 300px;
+	--banner-inner-height: 50px;
+	--banner-height-difference: calc(var(--banner-outer-height) - var(--banner-inner-height));
+	--banner-bg: #ffc75f;
+        --banner-radius:25px;
+        --banner-index:995;
+}
+
+body {
+     background-image: linear-gradient(to top, skyblue 0%, #87cefa 100%);
+    background-attachment: fixed;
+    transition: background-image 0.3s ease;
+	font-family: "DM Sans", sans-serif;
+	line-height: 1.25;
+	position: relative;
+	display: flex;
+	flex-direction:column;
+        align-items:center;
+        margin:0;
+	
+}
+body.dark-mode {
+    background-image: linear-gradient(to top, #2E2E2E 0%, #28282B 100%);
+  
+}
+
+.banner-outer {
+        width:100%;
+	height: var(--banner-outer-height);
+	position: sticky;
+	top: calc(var(--banner-height-difference) * -1);
+	z-index: var(--banner-index);
+	border-bottom-left-radius:var(--banner-radius);
+	border-bottom-right-radius:var(--banner-radius);
+        background-image: linear-gradient(to right, #000080 10%, #0000FF 50%, #000080 90%);
+        border: none;
+	box-shadow: 2px 2px 12px #c5c5c5;
+}
+
+
+.banner-inner {
+	height: var(--banner-inner-height);
+	position: sticky;
+	top: 0;
+        width:100%;
+        background-image: linear-gradient(to right, #000080 10%, #0000FF 50%, #000080 90%);
+        z-index:999;
+}
+
+.header {
+	height:50px;
+	position: sticky;
+	top: 0;
+        width:100%;
+        background-image: linear-gradient(to right, #000080 10%, #0000FF 50%, #000080 90%);
+        z-index:999;
+}
+
+
+h1.hide {
+	display: none;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+	.banner-outer {
+		width: 100%; /* Full width for smaller screens */
+		--banner-width: 100%; /* Full width for smaller screens */
+	}
+}
