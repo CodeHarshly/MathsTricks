@@ -33,7 +33,7 @@
             $label = $icon[1];
             if ($index != 0) {
                 if ($index == 1) {
-                    echo '<a href="web1.php" class="' . $class . '"  ><i class="' . $iconClass . '" ></i></a>';
+                    echo '<a href="Main.php" class="' . $class . '"  ><i class="' . $iconClass . '" ></i></a>';
                 } 
                 else {
                     echo '<a href="?active=' . $index . '"  class="' . $class . ' " ><i class="' . $iconClass . '" ></i></a>';
