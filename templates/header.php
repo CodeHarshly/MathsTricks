@@ -30,7 +30,7 @@
         echo'<div class="banner-outer">
         <h1 class="content-position1 hd1">Welcome to</h1>
         <div class="banner-inner">
-            <h2 class="content-position1 hd2">Learn Easy Tricks</h2>
+            <h2 class="content-position1 hd2">Math Tricks</h2>
         </div>
         <h1 class="content-position2 c2">Not sure where to begin? Click on the <u>3 bars</u> in the below menu, then go to Introduction.</h1>
     </div>';
